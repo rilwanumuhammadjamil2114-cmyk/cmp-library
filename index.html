@@ -251,19 +251,22 @@ setTimeout(()=>t.style.display="none",2000);
 
 /* HANDOUTS */
 function showHandouts(){
-clearInterval(timerInterval);
+    clearInterval(timerInterval);
 
-document.getElementById("content").innerHTML=`
-<div class="card">CMP 202</div>
-<div class="card">UCSC 203</div>
+    document.getElementById("content").innerHTML=`
+    <div class="card">CMP 202</div>
 
-<div class="card" onclick="openENT211()" style="background:#ecfdf5;">
-📘 ENT 211 - Lecture Notes
-</div>
+    <div class="card" onclick="openUCSC203()" style="background:#ecfdf5;">
+    📘 UCSC 203 - Lecture Notes
+    </div>
 
-<div class="card">IFT 212</div>
-<div class="card">MTH 202</div>
-`;
+    <div class="card" onclick="openENT211()" style="background:#ecfdf5;">
+    📘 ENT 211 - Lecture Notes
+    </div>
+
+    <div class="card">IFT 212</div>
+    <div class="card">MTH 202</div>
+    `;
 }
 
 /* OPEN ENT 211 PDF */
@@ -271,6 +274,11 @@ document.getElementById("content").innerHTML=`
 function openENT211() {
     window.location.href =
     "https://drive.google.com/file/d/18D3olRGjkh6PjvFPKynafh447aCMHp5v/preview";
+}
+
+function openUCSC203() {
+    window.location.href =
+    "https://drive.google.com/file/d/1Dnkhr6uQtv-5YyiZwnSGbPT2Qf9ci35t/preview";
 }
 
 /* PORTAL */

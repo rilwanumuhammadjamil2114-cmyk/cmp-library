@@ -220,7 +220,7 @@ function login(){
 const adm=document.getElementById("admission").value.trim();
 
 if(adm.length===10 &&
-(adm.startsWith("2412")||adm.startsWith("2512"))
+(adm.startsWith("2412")||adm.startsWith("2512")||adm.startsWith("2522")
 ){
 
 document.getElementById("loginPage").classList.remove("active");
@@ -288,7 +288,7 @@ clearInterval(timerInterval);
 document.getElementById("content").innerHTML=`
 <div class="card">
 <h3>University Portal</h3>
-<a href="https://myudusok.edu.ng/landing.php" target="_self">
+<a href="https://myudusok.edu.ng/index.php" target="_self">
 <button style="background:#10b981;color:white;">Open Portal</button>
 </a>
 </div>
